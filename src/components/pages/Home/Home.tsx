@@ -2,7 +2,9 @@ import AppAreaChart from "@/components/Area-chart/AppAreaChart";
 import AppBarChart from "@/components/Bar-chart/AppBarChart";
 import CartList from "@/components/Cart-list/CartList";
 import AppPieChart from "@/components/Pie-chart/AppPieChart";
+import { TableDemo } from "@/components/Table/Table";
 import Layout from "@/components/templates/Layout";
+import AppTodoList from "@/components/TodoList/AppTodoList";
 
 const Home = () => {
   return (
@@ -23,7 +25,12 @@ const Home = () => {
         <div className="bg-primary-foreground p-4 rounded-lg">
           <CartList title="Latest Transaksions" />
         </div>
-        <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+        <div className="bg-primary-foreground p-4 rounded-lg">
+          <AppTodoList />
+        </div>
+        <div className="bg-primary-foreground p-4 rounded-lg">
+          <TableDemo />
+        </div>
       </main>
     </Layout>
   );
